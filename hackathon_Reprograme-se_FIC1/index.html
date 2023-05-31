@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <title>REPROGRAME-SE</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navegacao ">
+      <div class="logoRepNav">
+        <img src="./assets/img/logo-reprogramese/preferencial-horizontal.png" alt="Logo Reprograme-se">
+      </div>
+      <ul>
+        <li><a href="#gradeCurricular">O que você irá aprender?</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropdown-toggle" data-bs-toggle="dropdown">Alunos</button>
+            <div class="dropdown-menu dropdown-menu-end alunosDrop">
+              <a href="#" class="dropdown-item">Acesso ao curso</a>
+              <a href="#" class="dropdown-item">Projetos desenvolvidos</a>
+              <a href="#" class="dropdown-item">Comunidade</a>
+              <a href="#" class="dropdown-item">Biblioteca Virtual</a>
+              <a href="#" class="dropdown-item">Cursos Complementares</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="video">
+      <div class="col-3 col-sm-3 col-md-3 logoHeader">
+        <img class="logoRepVideo" src="./assets/img/logo-reprogramese/preferencial-vertical.png"
+          alt="Logo Reprograme-se">
+      </div>
+      <div class="setaFlutuante">
+        <a href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se"
+          class="d-block btnInscricao">INSCREVA-SE JÁ!</a>
+        <i class="bi-caret-down"></i>
+      </div>
+      <video autoplay muted loop id="video">
+        <source src="./assets/video/video de fundo.mp4" type="video/mp4">
+      </video>
+    </div>
+  </header>
+  <main>
+    <div class="conteudo">
+      <div class="acessibilidade mb-4 text-center">
+        <button class="btnAumenta" onclick="aumentarFonte()">AUMENTAR FONTE</button>
+        <button class="btnDiminui" onclick="diminuirFonte()">DIMINUIR FONTE</button>
+        <button class="btnContraste" onclick="autoContraste()">AUTO CONTRASTE</button>
+        <button class="semContraste" onclick="semContraste()">SEM CONTRASTE</button>
+
+      </div>
+      <div class="boxShadow mb-5">
+        <div class="fraseLiberte">
+          <h2>EVENTOS</h2>
+          <p class=" col-sm-12 px-sm-0 py-3 m-auto">Liberte o poder da sua criatividade e transforme o mundo digital
+            com suas habilidades,
+            reprograme-se para novas possibilidades: aprenda a programar!</p>
+        </div>
+
+        <!-- CALENDARIO -->
+        <div class="eventos">
+          <table class="calendario d-inline-block">
+            <thead>
+              <tr>
+                <th colspan="7"><i class="bi-caret-left"></i> Março 2023 <i class="bi-caret-right"></i></th>
+              </tr>
+              <tr>
+                <th>D</th>
+                <th>S</th>
+                <th>T</th>
+                <th>Q</th>
+                <th>Q</th>
+                <th>S</th>
+                <th>S</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td class="evento">9</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td class="evento">25</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="eventosCal">
+            <div class="mb-4">
+              <h4>EVENTO DIA 9</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt libero. Voluptate numquam
+                consequuntur, esse dolor error iusto repellendus corrupti, ullam asperiores eligendi similique quibusdam
+                aliquid cupiditate sed omnis nostrum.</p>
+              <div class="dataEvento">
+                <p class="m-0">09/03/2023</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <h4>EVENTO DIA 25</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt libero. Voluptate numquam
+                consequuntur, esse dolor error iusto repellendus corrupti, ullam asperiores eligendi similique quibusdam
+                aliquid cupiditate sed omnis nostrum.</p>
+              <div class="dataEvento">
+                <p class="m-0">25/03/2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a class="btn btnNoticias mt-4" href="#noticias">Fique por dentro das noticias...</a>
+        </div>
+      </div>
+
+      <!-- SOBRE -->
+      <div class="boxShadow mb-5" id="sobre">
+        <h2 class="mt-2 mb-4 text-center">O que você sabe sobre o Reprograme-se?</h2>
+        <div id="sobre" class="m-auto boxConteudo">
+          <div class="d-inline-block">
+            <h2 class="fs-5">
+              Transforme-se em um desenvolvedor e participe do setor com maior empregabilidade no mundo!
+            </h2>
+            <p class="mb-4">
+              Destinado a jovens e adultos, sem restrições de idade, que tenham concluído o ensino médio ou estejam no
+              último ano da escola, o propósito do programa é proporcionar a você habilidades em programação de
+              computadores
+              e criação de sites. São 1.140 vagas disponibilizadas na primeira fase e mais 1.140 vagas na segunda
+              fase.
+            </p>
+            <a class="saibaMais"
+              href="https://cachoeiro.ifes.edu.br/images/stories/2022/editais/252022/Estrutura_e_organizacao_do_reprograme-se.pdf">
+              Saiba mais...
+            </a>
+          </div>
+          <div class="d-inline-block">
+            <img class="imgLado" src="./assets/img/mockups/Cabelos-cacheados-apontando-logo.png"
+              alt="Menina apontado para logo do REPROGRAMA-SE em sua camisa">
+          </div>
+        </div>
+      </div>
+
+      <!-- GRADE CURRICULAR -->
+      <div class="boxShadow mb-5" id="gradeCurricular">
+        <h2 class="text-center mb-4">Grade Curricular</h2>
+        <div>
+          <h4 class="text-center mb-3">FIC 1 - Front-end</h4>
+          <div class="gradeCurricular">
+            <div class="fic">
+              <div class="borderHor">
+                <h3>MÓDULO I</h3>
+                <p>Conhecimentos básicos de HTML e CSS</p>
+              </div>
+              <div class="borderVert borderHor">
+                <h3>MÓDULO II</h3>
+                <p>Introdução ao framework Bootstrap</p>
+              </div>
+              <div class="p-2">
+                <h3>MÓDULO III</h3>
+                <p>Programação estruturada com JavaScript</p>
+              </div>
+              <div class="borderVert p-2">
+                <h3>MÓDULO IV</h3>
+                <p>Desenvolvimento web com HTML, CSS e JavaScript</p>
+              </div>
+            </div>
+            <h4 class="text-center mb-3 mt-4">FIC 2 - Back-end</h4>
+            <div class="fic">
+              <div class="borderHor">
+                <h3>MÓDULO I</h3>
+                <p>Introdução ao framework Node.js e notação Javascript.</p>
+              </div>
+              <div class="borderVert borderHor">
+                <h3>MÓDULO II</h3>
+                <p>Criação de páginas customizadas com Node.js.</p>
+              </div>
+              <div class="p-2">
+                <h3>MÓDULO III</h3>
+                <p>Persistência de dados com Sequelize.</p>
+              </div>
+              <div class="borderVert p-2">
+                <h3>MÓDULO IV</h3>
+                <p>Node.js intermediário, CRUD com Sequelize, cookies e sessões.</p>
+              </div>
+            </div>
+            <a class="saibaMais ms-auto"
+              href="https://cachoeiro.ifes.edu.br/images/stories/2022/editais/252022/Estrutura_e_organizacao_do_reprograme-se.pdf">
+              Saiba mais...
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- OPORTUNIDADES -->
+      <div class="boxShadow">
+        <h2 class="mb-3 text-center">Novas oportunidas para você!!!</h2>
+        <div id="oportunidades" class="m-auto boxConteudo">
+          <div>
+            <h2 class="fs-5">
+              O PROGRAMA MAIS AMPLO E ESTRUTURADO DE TREINAMENTO DE DESENVOLVEDORES DE SOFTWARE NO ESTADO
+            </h2>
+            <p class="mb-4">
+              Explore um vasto universo de possibilidades nas empresas de tecnologia do Espírito Santo, onde há uma
+              enorme
+              necessidade por profissionais competentes em desenvolvimento de software. Junte-se agora ao programa
+              para
+              aproveitar essas oportunidades!
+            </p>
+          </div>
+          <div class="text-center">
+            <img class="imgLado" src="./assets/img/mockups/Jovens.png"
+              alt="Menina apontado para logo do REPROGRAMA-SE em sua camisa">
+          </div>
+        </div>
+      </div>
+
+      <!-- BENEFICIOS -->
+      <div id="beneficios">
+        <h2 class="text-center mt-5 mb-3 titBeneficios">QUIAIS OS BENEFICIOS DE PROGRAMAR?</h2>
+        <div class="beneficios">
+          <div class="p-2 boxShadow">
+            <h3>Pensamento lógico</h3>
+            <p>A programação ajuda a desenvolver a habilidade de pensar de forma lógica e estruturada, o que pode ser
+              útil
+              em muitas outras áreas.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Resolução de problemas</h3>
+            <p>A programação ensina como resolver problemas de forma eficiente e criativa, habilidades valiosas em
+              qualquer carreira.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Automação</h3>
+            <p>A programação permite automatizar tarefas repetitivas e trabalhosos, economizando tempo e recursos.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Inovação</h3>
+            <p>A programação é uma das principais impulsionadoras da inovação tecnológica em diversas áreas, como
+              saúde,
+              transporte, energia e muito mais.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Criatividade</h3>
+            <p>A programação permite criar e desenvolver projetos criativos, desde jogos até aplicativos móveis.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Flexibilidade</h3>
+            <p>A programação oferece flexibilidade em relação à localização do trabalho e ao tipo de projetos nos
+              quais
+              se
+              trabalha.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Empreendedorismo</h3>
+            <p>A programação pode ser uma habilidade valiosa para empreendedores que desejam criar suas próprias
+              startups
+              ou empresas de tecnologia.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Remuneração</h3>
+            <p>A programação é uma das carreiras mais bem remuneradas no mercado de trabalho atual.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Aprendizagem contínua</h3>
+            <p>A programação requer aprendizado constante, o que pode ajudar a manter a mente afiada e atualizada com
+              as
+              tendências tecnológicas.</p>
+          </div>
+          <div class="p-2 boxShadow">
+            <h3>Satisfação pessoal</h3>
+            <p>A programação pode proporcionar uma grande satisfação pessoal, especialmente quando se cria um produto
+              ou
+              projeto que ajuda as pessoas ou resolve um problema.</p>
+          </div>
+        </div>
+      </div>
+      <!-- DEPOIMENTOS -->
+      <div id="depoimentos" class="mt-5 m-auto boxShadow">
+        <div>
+          <h2 class="text-center">
+            Depoimentos
+          </h2>
+          <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+            <div class="d-flex justify-content-center mb-4">
+              <button class="carousel-control-prev position-relative" type="button"
+                data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next position-relative" type="button"
+                data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="carousel-inner py-4">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://img.freepik.com/fotos-gratis/retrato-de-uma-jovem-bonita-em-pe-na-parede-cinza_231208-10760.jpg?w=1380&t=st=1678046534~exp=1678047134~hmac=a5fb83289e53b96d082346fea9192f490a56aba19247b3fb5db8fe919cecbb86"
+                        alt="avatar" style="width: 150px;" />
+                      <h5 class="mb-3">Joana Silva</h5>
+                      <p>Dev. Javascript</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        O curso fornece excelente capacitação, recomendo!
+                      </p>
+                      <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://img.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_176420-18743.jpg?w=1380&t=st=1678046652~exp=1678047252~hmac=b346abdc6407a029b3ae67a3844248ee7ffcb51d5e3a5dd238462b76eefe0b14"
+                        alt="avatar" style="width: 150px;" />
+                      <h5 class="mb-3">Cleber Alves</h5>
+                      <p>Dev. Web</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Desenvolvi muito bem nesse curso, indico a todos!
+                      </p>
+                      <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li>
+                          <i class="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://img.freepik.com/fotos-gratis/menina-alegre-negocios-encaracolados-usando-oculos_176420-206.jpg?w=1380&t=st=1678046617~exp=1678047217~hmac=5d5c2d72efba254f938efc69b860306986c198860e028cca137475e97e1099c7"
+                        alt="avatar" style="width: 150px;" />
+                      <h5 class="mb-3">Maria Salves</h5>
+                      <p>Dev. FullStack</p>
+                      <p>
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Curso importante para minha formação profissional, recomendo!
+                      </p>
+                      <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="fas fa-star fa-sm"></i></li>
+                        <li><i class="far fa-star fa-sm"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="text-center">
+          * As 3 imagens do depoimento são originárias do site <a href=""> </a> <a class="text-primary"
+            href=br.freepik.com> br.freepik.com </a> <a class="text-primary"
+            href="https://br.freepik.com/fotos-gratis/retrato-de-uma-jovem-bonita-em-pe-na-parede-cinza_13813927.htm#query=pessoa&position=3&from_view=search&track=sph">
+            [1] </a> <a class="text-primary"
+            href="https://br.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_9583860.htm#query=pessoa&position=21&from_view=search&track=sph">
+            [2]</a> <a class="text-primary"
+            href="https://br.freepik.com/fotos-gratis/menina-alegre-negocios-encaracolados-usando-oculos_7514284.htm#query=pessoa&position=15&from_view=search&track=sph">[3]
+          </a>
+        </p>
+      </div>
+
+      <!-- INSCRIÇÃO -->
+      <div id="inscricao" class="boxShadow mt-5 m-auto ">
+        <div>
+          <h2 class="text-center">Ainda não se inscreveu?</h2>
+          <p class="mb-4">
+            Inscreva-se para o processo seletivo e junte-se ao programa gratuito que oferece CAPACITAÇÃO EM
+            PROGRAMAÇÃO
+            DE SOFTWARE, fornecendo a oportunidade de desenvolver novas habilidades ou mesmo de se reposicionar no
+            mercado de trabalho.
+          </p>
+          <div>
+            <a href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se;"
+              class="d-block btnInscricao text-center fs-2">INSCREVA-SE JÁ!</a>
+          </div>
+        </div>
+        <div class="text-center">
+          <img class="imgInscricao" src="./assets/img/mockups/pessoas-diferentes.png"
+            alt="Pessoas felizes com o Reprograme-se">
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div id="faq" class="mt-5 m-auto ">
+        <div>
+          <h2 class="text-center">RESPOSTAS A PERGUNTAS FREQUENTES</h2>
+          <p class="mb-4 text-break  text-justify ">
+          <div class="mb-3 boxShadow">
+            <h4> Quais são os cursos de projeto reprograme-se? </h4>
+            O reprograme-se é composto por dois cursos: o curso Programação básica de aplicativos Web - Front-end e o
+            curso Programação com JavaScript e o Framework Node.js - Backend (confira o link da estrutura do curso).
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Quanto tempo eu tenho para finalizar os cursos do projeto reprograme-se?</h4>
+            O reprograme-se terá a duração de 8 meses, sendo 4 meses para o curso Programação básica de aplicativos
+            Web
+            -
+            Front-end e 4 meses para o curso Programação com JavaScript e o Framework Node.js - Back-end.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Tenho que pagar inscrição?</h4>
+            Não, o curso é totalmente gratuito.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Terei atendimentos se tiver dúvidas?</h4>
+            Sim. Você contará com o apoio de um professor mediador que possui formação na área do reprograme-se e um
+            Monitor que é estudante de curso de informática.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Tenho que ir ao Ifes fazer matrícula?</h4>
+            Não! As matrículas serão realizadas de forma online a partir das informações disponibilizadas na
+            inscrição.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>O curso será gravado, podendo assistir posteriormente?</h4>
+            Sim. O curso está no AVA- Moodle e nele os materiais, os conteúdos e atividades poderão ser acessados 24
+            horas
+            por dia. Entretanto existem prazos finais para o cumprimento das atividades que possuem o encerramento,
+            semanalmente.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Posso estudar de qualquer lugar?</h4>
+            Sim, desde que sua localidade permita você frequentar encontros presenciais que ocorrerão no polo de apoio
+            presencial do município do Estado do Espírito Santo – polo UAB, conforme listados no edital.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Sou morador de outro Estado é possível fazer o curso totalmente online?</h4>
+            Não! A proposta pedagógica do curso não permite que o curso seja totalmente online devido a complexidade
+            do
+            conteúdo “programação web”, dessa forma haverá necessidade de encontros presenciais para orientação e
+            realização das atividades práticas. Assim você deverá ser morador do Estado do Espírito Santo.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Tenho que ir ao Ifes para fazer alguma atividade?</h4>
+            Não! A maioria das atividades serão realizadas de forma online utilizando-se do Ambiente de Aprendizagem –
+            Moodle e em ambiente interativo de desenvolvimento, e, os momentos presenciais serão realizados no polo de
+            apoio presencial UAB do município, em horário combinado com o Professor Mediador.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Sou obrigado a ir ao polo de apoio presencial?</h4>
+            Sim. Considerando a complexidade do conteúdo de programação é importante para efetivação da aprendizagem
+            que
+            você participe de momentos presenciais de estudos. O Professor mediador estará disponível para orientar a
+            aprendizagem, sanar as dúvidas em relação aos conteúdos, bem como, acompanhar a execução das atividades
+            avaliativas.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Os cursos do projeto Reprograme-se serão realizados somente a distância?</h4>
+            Não, embora a maioria das atividades, tanto práticas como
+            teóricas sejam desenvolvidas à distância, haverá apoio e orientação de forma presencial no polo UAB do
+            município (ES), mais próximo de sua residência. Os polos estão listados no edital.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Como serão realizadas as aulas online?</h4>
+            As aulas online serão realizadas na plataforma Moodle e, neste ambiente, teremos todo
+            o material do curso, dentre eles, videoaulas gravadas, textos, link à Internet e atividades variadas.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Haverá acompanhamento ao estudante com horário pré determinados?</h4>
+            Sim. Haverá acompanhamento em horários
+            pré-determinados por meio do programa Repl-it para realização das atividades de programação de forma
+            interativa e, ainda, atividades síncronas por meio web conferência e encontros presenciais no polo de
+            apoio
+            presencial UAB do município listado no edital.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Se eu realizar os cursos do projeto reprograme-se estarei preparado para programar?</h4>
+            O egresso do curso “Reprograme-se” estará preparado para assumir demandas de
+            mercado de baixa complexidade no desenvolvimento de soluções web usando a linguagem de programação
+            Javascript
+            juntamente com o framework Node.js, estando também fundamentado para se adaptar a outras plataformas de
+            desenvolvimento.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>Sou estudante do último ano do Ensino Médio em Escola particular, minha inscrição será aceita?</h4>
+            Neste momento, não! Esta oferta do reprograme-se está aberta somente para quem já possui o
+            Ensino Médio completo e estudantes do último ano do Ensino Médio da escola pública.
+          </div>
+          <div class="mb-3 boxShadow">
+            <h4>O aluno fará seu próprio horário pessoal de estudos?</h4>
+            Sim. Entretanto é possível que precisará adaptar-se a alguns
+            horários de atendimento com o Professor Mediador e Monitor.
+          </div>
+          </p>
+        </div>
+        <div class="text-center">
+          <img class="imgInscricao" src="./assets/img/mockups/pessoas-diferentes.png"
+            alt="Pessoas felizes com o Reprograme-se">
+        </div>
+      </div>
+
+      <!-- FORM DUVIDAS -->
+      <div class="mx-3" id="form">
+        <h2 class="mt-5 mb-4 text-center">Tem alguma dúvida ou sugestão? Envie uma mensagem</h2>
+        <form action="mailto:contato@reprograme-se.org.br">
+          <div class="mb-2 p-0">
+            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required>
+          </div>
+          <div class="mb-2 p-0">
+            <input class="form-control" type="email" name="email" placeholder="Digite seu email" required>
+          </div>
+          <input class="form-control mb-2" type="text" name="assunto" placeholder="Digite o assunto" required>
+          <textarea class="form-control mb-2" name="Mensagem" cols="30" rows="10" placeholder="Digite a mensagem"
+            required></textarea>
+          <button type="submit" class="btn btnForm fs-4 m-1 col-12">
+            ENVIAR
+          </button>
+
+        </form>
+      </div>
+
+      <!-- NOTICIAS -->
+      <div id="noticias">
+        <h2 class="mt-5 text-center">Noticias Importantes</h2>
+        <div class="containerNoticias">
+          <div class="carousel slide carousel-fade carousel-dark position-relative" id="noticia" data-bs-ride="carousel"
+            data-bs-touch="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="p-0">
+                  <img src="./assets/img/code.jpg" alt="" class="rounded img-thumbnail">
+                </div>
+                <div class="txtNoticia p-2">
+                  <h5>NOVAS VAGAS PARA O REPROGRAME-SE</h5>
+                  <p class="m-0">Novas vagas estão disponíveis para o curso de programação Reprograme-se, destinado a
+                    jovens e
+                    adultos, sem restrições de idade, que tenham concluído o ensino médio ou estejam no último ano da
+                    escola que desejam aprender programação e ingressar no mercado de trabalho em tecnologia.
+                  </p>
+                </div>
+                <div class="mt-3">
+                  <a href="#" class="saibaMais verNoticia d-block">Ver toda a noticia</a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="p-0">
+                  <img src="./assets/img/hacker.jpg" alt="" class="rounded img-thumbnail">
+                </div>
+                <div class="txtNoticia p-2">
+                  <h5>HACKATHON REPROGRAME-SE</h5>
+                  <p class="m-0">O hackathon Reprograma-se é uma competição voltada para jovens e adultos que desejam se
+                    aprimorar na área de tecnologia e programação, visando soluções criativas para problemas reais.
+                  </p>
+                </div>
+                <div class="mt-3">
+                  <a href="#" class="saibaMais verNoticia d-block">Ver toda a noticia</a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="p-0">
+                  <img src="./assets/img/cursos.jpg" alt="" class="rounded img-thumbnail">
+                </div>
+                <div class="txtNoticia p-2">
+                  <h5>ABERTURA DE NOVOS CURSOS</h5>
+                  <p class="m-0">O Instituto Federal do Espírito Santo (IFES) anuncia a abertura de novos cursos em
+                    diversas áreas para o ano letivo de 2023, com oportunidades para estudantes de todo o estado. Entre
+                    as
+                    novidades estão cursos técnicos, graduações e pós-graduações, buscando atender às demandas do
+                    mercado
+                    de trabalho e promover a formação de profissionais capacitados.
+                  </p>
+                </div>
+                <div class="mt-3">
+                  <a href="#" class="saibaMais verNoticia d-block">Ver toda a noticia</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev z-3" data-bs-target="#noticia" data-bs-slide="prev">
+              <span class="bi-caret-left-fill p-3 fs-1"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#noticia" data-bs-slide="next">
+              <span class="bi-caret-right-fill p-3 fs-1"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- REALIZAÇÃO -->
+      <div class="realizadores boxShadow mt-5">
+        <h3 class="text-center">RELIZAÇÃO</h3>
+        <div class="realizacao">
+          <div>
+            <img class="logoIfes" src="./assets/img/logo-ifes/ifes-vertical-cor.png" alt="Logo Ifes">
+          </div>
+          <div>
+            <img class="logoAction" src="./assets/img/logo-action/vertical-cor.png" alt="Logo Action">
+          </div>
+        </div>
+        <p class="justifica">Liderado pelo IFES e Action, o projeto tem se destacado como uma iniciativa importante
+          para
+          a capacitação de novos profissionais na área de tecnologia. É notável o comprometimento e dedicação dos
+          envolvidos neste projeto, que têm trabalhado incansavelmente para oferecer uma formação de qualidade e
+          acessível para todos. </p>
+      </div>
+
+      <!-- PARCEIROS -->
+      <div>
+        <h4 class="mt-5 mb-3 text-center">EMPRESAS PARCEIRAS</h4>
+        <div class="parceiros">
+          <img class="boxShadow" src="./assets/img/parceiros/Aratu_logo.jpg" alt="Aratu_logo">
+          <img class="boxShadow" src="./assets/img/parceiros/AZYS.jpg" alt="Logo Azys">
+          <img class="boxShadow" src="./assets/img/parceiros/BRAJAN.jpg" alt="Logo Brajan">
+          <img class="boxShadow" src="./assets/img/parceiros/CONEXOS_SITE-Ppsd.jpg" alt="Logo Conexos">
+          <img class="boxShadow" src="./assets/img/parceiros/Dersalis-para-site.jpg" alt="Logo Dersalis">
+          <img class="boxShadow" src="./assets/img/parceiros/ETAURE.jpg" alt="Logo Etaure">
+          <img class="boxShadow" src="./assets/img/parceiros/INFOSIS_SITE.jpg" alt="Logo Infosis">
+          <img class="boxShadow" src="./assets/img/parceiros/INTEGRA.jpg" alt="Logo Integra">
+          <img class="boxShadow" src="./assets/img/parceiros/LOGO-BITÁVEL-PROGRAM.jpg" alt="Logo Bitavel">
+          <img class="boxShadow" src="./assets/img/parceiros/Mindworks.jpg" alt="Logo Mindworks">
+          <img class="boxShadow" src="./assets/img/parceiros/MOGAI.jpg" alt="Logo Mogai">
+          <img class="boxShadow" src="./assets/img/parceiros/OpenPort.jpg" alt="Logo Open Port">
+          <img class="boxShadow" src="./assets/img/parceiros/PenseRede.jpg" alt="Logo Pense Rede">
+          <img class="boxShadow" src="./assets/img/parceiros/SANKHYA.jpg" alt="Logo Sankhya">
+          <img class="boxShadow" src="./assets/img/parceiros/SPG.jpg" alt="Logo SPG">
+          <img class="boxShadow" src="./assets/img/parceiros/Tempro.jpg" alt="Logo Tempro">
+          <img class="boxShadow" src="./assets/img/parceiros/Trust.jpg" alt="Logo Trust">
+          <img class="boxShadow" src="./assets/img/parceiros/Vipphone.jpg" alt="Logo Vipphone">
+          <img class="boxShadow" src="./assets/img/parceiros/VIXTEAM.jpg" alt="Logo VixTeam">
+          <img class="boxShadow" src="./assets/img/parceiros/ZARUC.jpg" alt="Logo Zaruc">
+        </div>
+      </div>
+
+      <!-- SUPORTE -->
+      <div class="divSuporte">
+        <a class="suporte" href="#form"><i class="bi-headset fs-2"></i></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <img src="./assets/img/logo-reprogramese/preferencial-horizontal-branca.png" alt="Logo REPROGRAME-SE">
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

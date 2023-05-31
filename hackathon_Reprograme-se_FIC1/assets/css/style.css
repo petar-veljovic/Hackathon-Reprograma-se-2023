@@ -1,0 +1,684 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+}
+
+header a, ul, li, button{
+    color: white;
+}
+
+linkdr{
+    text-decoration: none;
+    color: #1a7fbe;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.justifica{
+    text-align: justify;
+}
+
+/* MENUS E LOGO */
+.navegacao{
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+}
+
+.navegacao ul{
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    right: 10px;
+    margin-bottom: 0;
+    top: 0px;
+}
+
+.navegacao li{
+    display: inline-block;
+    padding: 7px 3px 7px 3px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 2rem;
+}
+
+.navegacao li:hover{
+    display: inline-block;
+    border-bottom: 1px solid #1a7fbe ;
+}
+
+.navegacao a{
+    padding: 10px 6px;
+}
+
+.navegacao button{
+    border: none;
+    background-color: transparent;
+}
+
+
+.alunosDrop{
+    font-size: 1.5rem;   
+    padding: 0;
+}
+
+.alunosDrop a{   
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.logoRepNav{
+    width: 8vw;
+    display: inline-block;
+}
+
+.logoRepNav img{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.video{
+    width: 100vw;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+
+#video{
+    width: 100%;  
+    max-height: 100vh; 
+    filter: brightness(0.5);
+}
+
+.logoHeader{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.logoRepVideo{
+    width: 100%;
+}
+
+.setaFlutuante{
+    text-align: center;
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    animation-name: flutuante;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-size: 2rem;
+}
+
+.btnInscricao{
+    background-image: linear-gradient(120deg, #1a7fbe, #c27fb1);
+    padding: 10px;
+    border-radius: 10px;    
+}
+
+/* CONTEUDO */
+
+.conteudo{
+    max-width: 700px;
+    margin: auto;
+    padding: 16px;
+}
+
+.fraseLiberte{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ACESSIBILIDAE */
+.acessibilidade button{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnAumenta{
+    background-color: green;
+}
+
+.btnDiminui{
+    background-color: red;
+}
+
+.btnContraste{
+    background-color: blue;
+}
+
+.semContraste{
+    background-color: orange;
+}
+
+
+/* CALENDARIO - EVENTOS */
+
+.eventos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border: 4px solid #1a7fbe;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.calendario {
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .calendario th {
+    padding: 10px;
+  }
+  .calendario td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .evento{
+    background-color: black;
+    color: white;
+  }
+
+  .eventosCal{
+    padding: 20px;
+    overflow-y: scroll;
+    height: 300px;
+    border-left: 5px solid #c27fb1;
+  }
+
+  .dataEvento{
+    text-align: right;
+  }
+
+  .dataEvento p{
+    display: inline-block;
+    text-align: right;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+  }
+
+  .btnNoticias{
+    background-color: #1a7fbe;
+    color: white;
+    transition: 1s;
+  }
+
+/* SOBRE */
+
+.boxConteudo{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.boxConteudo h2{
+    margin-bottom: 10px;
+  }
+
+
+.p{
+    margin-bottom: 10px;
+  }
+
+.imgLado {
+  width: 400px;
+}
+
+.saibaMais{
+    background-color: #c27fb1;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* GRADE CURRICULAR */
+
+.gradeCurricular{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
+} 
+
+.fic{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px;
+}
+
+.borderVert{
+    border-left: solid #c27fb1 5px;
+}
+
+.borderHor{
+    border-bottom: solid #1a7fbe 5px;
+}
+
+/* OPORTUNIDADE */
+
+#oportunidades{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    align-content: center;
+}
+
+/* BENEFICIOS */
+
+.beneficios{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.beneficios h3{
+    text-transform: uppercase;
+}
+
+/* DEPOIMENTOS */
+.cbord
+{
+ border-radius: 100%;
+}
+
+/* INSCRICAO */
+
+.imgInscricao{
+    width: 100%;
+}
+
+#faq h4{
+    text-align: center;
+}
+
+/* FORM */
+
+.btnForm{
+    background-color: #1a7fbe;
+    color: white;
+    transition: 1s;
+}
+
+.btnForm:hover, .btnNoticias:hover{
+    background-color: #c27fb1;
+    color: white;
+    transition: 1s;
+}
+
+/* NOTICIAS */
+.carousel-item img {
+    height: 300px;
+    width: 100%; 
+    object-fit: cover; 
+  }
+
+.txtNoticia{
+    height: 160px;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.txtNoticia::-webkit-scrollbar, .eventosCal::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+.containerNoticias{
+    border-radius: 20px;
+    padding: 20px;
+    height: 560px;
+    border: 4px solid #1a7fbe;
+}
+
+.verNoticia{
+    background-image: linear-gradient(120deg, #1a7fbe, #c27fb1);
+    text-align: center;
+}
+
+.verNoticia:hover{
+    background-image: linear-gradient(120deg, #c27fb1, #1a7fbe);
+}
+
+
+/* REALIZAÇÃO */
+
+.realizacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.logoIfes{
+    height: 300px;
+}
+
+.logoAction{
+    height: 200px;
+}
+
+/* PARCEIROS */
+
+.parceiros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.parceiros img{
+    padding: 20px;
+    width: 100%;
+}
+
+/* SUPORTE */
+
+.suporte{
+    background-color: #1a7fbe;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 20px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.suporte i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: flutuanteSuporte;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+/* BOX SHADOW */
+
+.boxShadow{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.boxShadow:hover{
+    box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background-color: black;
+}
+
+footer img{
+    height: 300px;
+}
+
+/* ANIMAÇÕES */
+
+@keyframes flutuante {
+    0%{
+        top: 50%;
+    }    
+    50%{
+        top: 53%;
+    }
+
+    100%{
+        top: 50%;
+    }
+}
+
+@keyframes flutuanteSuporte {
+    0%{
+        top: 40%;
+    }    
+
+
+    100%{
+        top: 60%;
+    }
+}
+
+/* RESPOSIVIDADE */
+@media screen and (max-width: 1250px) {    
+    .navegacao li{
+        font-size: 1.3rem;    
+    }
+
+    .alunosDrop{
+        font-size: 1rem;   
+        padding: 0;
+    }
+} 
+
+@media screen and (max-width: 900px) {    
+    .navegacao li{
+        font-size: 1rem;    
+    }
+
+    .setaFlutuante{
+        font-size: 1.2rem;
+    }
+} 
+
+@media screen and (max-width: 750px) {    
+    .navegacao li{
+        font-size: 0.8rem;    
+    }
+
+    .setaFlutuante{
+        font-size: 0.9rem;
+    }
+
+    #sobre, #oportunidades{
+        display: block;
+    }
+
+    .boxConteudo p{
+        text-align: justify;
+    }
+
+    .imgLado{
+        display: none;
+      }
+    
+    #oportunidades img{
+        display: inline-block;
+    }
+
+    #oportunidades{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        align-content: center;
+    }
+
+    .suporte{
+    padding: 25px;
+  }
+
+      .eventos {
+        grid-template-columns: 1fr;
+        font-size: 0.9rem;
+        grid-template-rows: 300px;
+    }
+
+    .eventosCal {
+        padding: 20px;
+        overflow-y: scroll;
+        height: 200px;
+        border-top: 5px solid #c27fb1;
+        border-left: 0px;
+    }
+
+    footer img{
+        height: 200px;
+    }
+
+    .acessibilidade button{
+        padding: 7px;
+        font-size: 0.9rem;
+    }
+} 
+
+@media screen and (max-width: 585px) {    
+    .navegacao li{
+        font-size: 0.6rem;    
+    }
+
+    .setaFlutuante{
+        font-size: 0.8rem;
+    }
+
+    .logoRepNav{
+        display: none;
+    }
+
+    .alunosDrop{
+        font-size: 0.8rem;   
+    }
+
+    .imgLado{
+        width: 100%;
+    }
+
+    .beneficios h3{
+        font-size: 1rem;
+    }
+
+    .beneficios p{
+        font-size: 0.9rem;
+    }
+
+    .parceiros{
+        grid-template-columns: 1fr 1fr;   
+    }
+
+    .logoIfes{
+        height: 200px;
+    }
+    
+    .logoAction{
+        height: 140px;
+    }
+
+    .acessibilidade button{
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    footer img{
+        height: 150px;
+    }
+
+    .fraseLiberte h2{
+        font-size: 1.2rem;
+    }
+
+    .fraseLiberte p{
+        font-size: 0.8rem;
+    }
+} 
+
+@media screen and (max-width: 440px) {    
+    .navegacao li{
+        font-size: 0.45rem;    
+    }
+
+    .setaFlutuante{
+        font-size: 0.6rem;
+    }
+
+    .alunosDrop{
+        font-size: 0.7rem;   
+    }
+
+    .beneficios h3{
+        font-size: 0.9rem;
+    }
+
+    .beneficios p{
+        font-size: 0.8rem;
+    }
+
+    .titBeneficios{
+        font-size: 1.3rem;
+    }
+
+    .logoIfes{
+        height: 150px;
+    }
+    
+    .logoAction{
+        height: 100px;
+    }
+
+
+    .acessibilidade button{
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+} 
+
+@media screen and (max-width: 370px) { 
+    .navegacao li{
+        font-size: 0.4rem;  
+        padding: 0;
+        margin: 0;  
+        border: 0.5px;
+    }
+
+    .setaFlutuante{
+        font-size: 0.5rem;
+    }
+
+    .alunosDrop{
+        font-size: 0.3rem;   
+    }
+
+    .fic{
+        font-size: 0.8rem;
+    }
+
+    footer img{
+        height: 100px;
+    }
+} 
+
